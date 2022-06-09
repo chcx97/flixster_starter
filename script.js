@@ -6,6 +6,7 @@ const language = "en-US";
 const movieForm = document.querySelector("form");
 const movieArea = document.getElementById("movie-area");
 const getMovie = document.getElementById("search-movie");
+const movieGrid = document.querySelector(".grid");
 const submitBtn = document.getElementById("submit-movie")
 //api for Popular Movies
 const apiUrl_Popular = "https://api.themoviedb.org/3/movie/popular" + "?api_key=" + API_KEY + "&language=" + language + "&page=" + page; //
@@ -67,13 +68,17 @@ function displayMovies(searchedMovie){
 //display movies
 function displayMovie(jsonResponse){
     console.log(jsonResponse);
+    
     for(let i = 0; i < jsonResponse.length; i++){
         let moviePoster = IMGPATH+jsonResponse[i].poster_path; 
         movieArea.innerHTML += `
-            <img src = "${IMGPATH}${jsonResponse[i].poster_path}"></img>
-            <div id="movie_title">Title: ${jsonResponse[i].original_title}</div>
-            <div id="movie_rating">Rating: ${jsonResponse[i].vote_average}</div>
-         `;
+            <div class=movie-grid>
+                <img src = "${IMGPATH}${jsonResponse[i].poster_path}" id = "movie_poster"></img>
+
+                <div id="movie_rating"><img src = "img/star.jpg.jpg" id="rating_icon"></img> ${jsonResponse[i].vote_average}</div>
+                <div id="movie_title">${jsonResponse[i].original_title}</div>
+            </div>
+        `;
 
          console.log(jsonResponse[i].original_title);
          console.log(jsonResponse[i].vote_average);

@@ -1,1 +1,43 @@
-
+#search-movie{
+    justify-content: center;
+    height: 30px;
+    width: 500px;
+    display: inline-block;
+}
+#movie-area{
+    position: absolute;
+    width: 100%;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 15px;
+    max-height: fit-content;
+}
+#movie_title{
+    max-width: 300px;
+}
+#rating_icon{
+    width: 4.5%;
+    height: auto;
+}
+#flixster-logo{
+    display: inline-block;
+    width: 10%;
+    height: auto;
+}
+.header-area{
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: cen
+}
+.child {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
