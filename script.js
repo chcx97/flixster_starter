@@ -4,9 +4,8 @@ const page = 1;
 const language = "en-US";
 //query variables
 const movieForm = document.querySelector("form");
-const movieArea = document.getElementById("movie-area");
+const movieArea = document.getElementById("movie-grid");
 const getMovie = document.getElementById("search-movie");
-const movieGrid = document.querySelector(".grid");
 const submitBtn = document.getElementById("submit-movie")
 //api for Popular Movies
 const apiUrl_Popular = "https://api.themoviedb.org/3/movie/popular" + "?api_key=" + API_KEY + "&language=" + language + "&page=" + page; //
@@ -43,34 +42,20 @@ async function defaultPage(){
     const jsonResponse = await popularMovies();      
     displayMovie(jsonResponse);
 }
+
 async function popularMovies(){
     let response = await fetch(apiUrl_Popular);
     let responseData = await response.json();
     console.log(responseData.results);
     return responseData.results;
 }
-/*
-function displayMovies(searchedMovie){
-    console.log(searchedMovie);
-    for(let i = 0; i < searchedMovie.length; i++){
-        //let moviePoster = IMGPATH+searchedMovie[i].poster_path; 
-        movieArea.innerHTML += `
-            <img src = "${IMGPATH}${searchedMovie[i].poster_path}"></img>
-            <div id="movie_title">Title: ${searchedMovie[i].original_title}</div>
-            <div id="movie_rating">Rating: ${searchedMovie[i].vote_average}</div>
-         `;
 
-         console.log(searchedMovie[i].original_title);
-         console.log(searchedMovie[i].vote_average);
-    }
-}
-*/
 //display movies
 function displayMovie(jsonResponse){
     console.log(jsonResponse);
     
     for(let i = 0; i < jsonResponse.length; i++){
-        let moviePoster = IMGPATH+jsonResponse[i].poster_path; 
+        if(jsonResponse[i].poster_path!= null){
         movieArea.innerHTML += `
             <div class=movie-grid>
                 <img src = "${IMGPATH}${jsonResponse[i].poster_path}" id = "movie_poster"></img>
@@ -79,7 +64,16 @@ function displayMovie(jsonResponse){
                 <div id="movie_title">${jsonResponse[i].original_title}</div>
             </div>
         `;
+        } else{
+            movieArea.innerHTML += `
+            <div class=movie-grid>
+                <img src = "img/emptymovieposter.png" id = "empty_poster"></img>
 
+                <div id="movie_rating"><img src = "img/star.jpg.jpg" id="rating_icon"></img> ${jsonResponse[i].vote_average}</div>
+                <div id="movie_title">${jsonResponse[i].original_title}</div>
+            </div>
+        `;
+        }
          console.log(jsonResponse[i].original_title);
          console.log(jsonResponse[i].vote_average);
     }
