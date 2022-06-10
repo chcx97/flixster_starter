@@ -1,5 +1,6 @@
 
 .container{
+    animation: 1s ease-out 0s 1 slideInFromLeft;
     display: grid;
     grid-template-columns: auto;
     left: 30%;
@@ -15,7 +16,8 @@
     left: 16%;
     width: 500px;
 }
-#flixster-logo{
+
+#close-search-btn{
     left: 50px;
     width: 10%;
     height: auto;
@@ -44,7 +46,7 @@ input[type=text]{
 input[type=text]:focus {
     width: 100%;
   }
-#search-movie::placeholder{
+#search-input::placeholder{
     padding-left: 10px;
     font-size: 17px;
 }

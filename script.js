@@ -2,9 +2,9 @@
 const API_KEY = "49cf0e81ad87db4a10b79c1291f7109c";
 const language = "en-US";
 //query variables
-const movieForm = document.querySelector("form");
+const movieForm = document.querySelector("#search-form");
 const movieArea = document.getElementById("movie-grid");
-const getMovie = document.getElementById("search-movie");
+const getMovie = document.getElementById("search-input");
 const playing_title = document.getElementById("playing-title");
 const loadMoreBtn = document.getElementById("load-more-movies-btn")
 //var variables

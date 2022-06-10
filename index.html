@@ -13,11 +13,13 @@
     <h1>
         <div class="container">
             <div class="child">
-                <img src="img/flixster.png" alt="Flixster icon" id="flixster-logo">
+                <form>
+                    <input type="image" src="img/flixster.png" alt="home-icon" id="close-search-btn">
+                </form>
             </div>
             <div class="inner-child">
-                    <form><input type="text" id = "search-movie" name="search-movie" placeholder="Search..." required onchange="resetPage()">
-                    </form>
+                <form id="search-form"><input type="text" id = "search-input" name="search-movie" placeholder="Search..." required onchange="resetPage()">
+                </form>
             </div>
             
             
@@ -26,7 +28,6 @@
 
     </h1>
 
-    <br>
     <div id="playing-title">
         Now Playing
     </div>
