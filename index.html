@@ -11,21 +11,32 @@
 </head>
 <body>
     <h1>
-        <div class="header-area">
-            <div class="child"><img src="img/flixster.png" alt="Flixster icon" id="flixster-logo"></div>
-            <div class="child"><form><input type="text" id = "search-movie" name="search-movie" placeholder="Search..." required></form></div>
+        <div class="container">
+            <div class="child">
+                <img src="img/flixster.png" alt="Flixster icon" id="flixster-logo">
+            </div>
+            <div class="inner-child">
+                    <form><input type="text" id = "search-movie" name="search-movie" placeholder="Search..." required onchange="resetPage()">
+                    </form>
+            </div>
+            
+            
         </div>
         
 
     </h1>
 
     <br>
-    <div id="popular-movies">
-        Popular Movies
+    <div id="playing-title">
+        Now Playing
     </div>
     <br>
     <div id="movie-grid" class="movie-containers">
     </div>
+    <div id="btn-area">
+        <button id="load-more-movies-btn">Load More Movies</button>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
