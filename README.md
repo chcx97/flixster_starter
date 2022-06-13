@@ -4,9 +4,9 @@
 
 Submitted by: **Christy Xiong**
 
-Estimated time spent: **10** hours spent in total
+Estimated time spent: **15** hours spent in total
 
-Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
+Deployed Application (optional): [Flixster Deployed Site](https://chcx97.github.io/flixster_starter/)
 
 ### Application Features
 
@@ -42,9 +42,7 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 
 ### Walkthrough Video
 
-`TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after adding walkthrough video)
-
-`ADD_EMBEDDED_CODE_HERE`
+<img src='SITE_walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### Reflection
 
@@ -67,4 +65,4 @@ During my project demo, my project went a lot better than the first time I demoe
 
 ### Shout out
 
-Big shout to all my peers, lab partners, TA, and instructors! I wouldn't have been able to learn so much within a week without the help and support of each and every one of them. 
+Big shout to all my peers, lab partners, TAs, and instructors! I wouldn't have been able to learn so much within a week without the help and support of each and every one of them. 
