@@ -14,18 +14,18 @@
         <div class="container">
             <div class="child">
                 <form>
-                    <input type="image" src="img/flixster.png" alt="home-icon" id="close-search-btn">
+                    <input type="image" src="img/flixster.png" alt="home-icon" id="logo-home">
                 </form>
             </div>
             <div class="inner-child">
-                <form id="search-form"><input type="text" id = "search-input" name="search-movie" placeholder="Search..." required onchange="resetPage()">
+                <form id="search-form">
+                    <input type="text" id = "search-input" class="text-area"name="search-movie" placeholder="Search..." required onchange="resetPage()">
                 </form>
-            </div>
-            
-            
+                <div id="close-search">
+                    <button id="close-search-btn" class="text-area">CLEAR</button>
+                </div>
+            </div>   
         </div>
-        
-
     </h1>
 
     <div id="playing-title">
