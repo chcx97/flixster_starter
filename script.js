@@ -33,6 +33,7 @@ movieForm.addEventListener("transitionrun", async function() {
             console.log(mouseInside);
             console.log(11111,close_btn.addEventListener("click", clearSearch));
             getMovie.value = "";
+            page = 1;
             close_btn.addEventListener("click", clearSearch);
         }else{
             console.log("we are clicking outside the text box :3");
@@ -53,7 +54,7 @@ async function clearSearch(){
     //console.log(1234567,close_btn.addEventListener("mouseleave",clearSearch));
     //console.log(41465,close_btn.addEventListener("click", clearSearch));
     console.log("does clicker work?");
-    await clearSearchBar();
+    clearSearchBar();
     console.log(916,getMovie.value);
     defaultPage();
     hideClearBtn();
