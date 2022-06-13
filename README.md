@@ -42,7 +42,7 @@ Deployed Application (optional): [Flixster Deployed Site](https://chcx97.github.
 
 ### Walkthrough Video
 
-<img src='SITE_walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### Reflection
 
