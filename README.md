@@ -4,7 +4,7 @@
 
 Submitted by: **Christy Xiong**
 
-Estimated time spent: **4** hours spent in total
+Estimated time spent: **10** hours spent in total
 
 Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 
@@ -50,20 +50,21 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+The topics discussed in my labs did prepare me to complete the assignment, however I believe that what helped me finished this project more was being able to google search additional concepts related to concepts javascript and css. For example, I was able to understand how to use APIs because of lab 3 and the additional lecture given on Thursday, but being able to have the clear button disappear when the search bar shrinks and functionally work was something that I had to find through online sources.
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
-  
-Add your response here
+ 
+ If I had more time, I would love to include the pop-up functions and a "go to top" button. I also want to implement a youtube trailer of the movies clicked and have the user be able to play the video.
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+During my project demo, my project went a lot better than the first time I demoed it to the class. I included backgrounds and worked with the CSS part of my project more to make it look user friendly. I really wished I included the clear button that I have now and finished all stretch stories. I really liked how my peers were able to finish the stretch stories and include the pop-up modal and play the youtube trailers. I would've love to implement those features into mine.
 
 ### Open-source libraries used
 
-- Add any links to open-source libraries used in your project.
+- [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [w3 schools](https://www.w3schools.com/js/)
 
 ### Shout out
 
-Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+Big shout to all my peers, lab partners, TA, and instructors! I wouldn't have been able to learn so much within a week without the help and support of each and every one of them. 
